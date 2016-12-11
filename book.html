@@ -72,7 +72,6 @@
           word-break: break-all;
         }
         .ref-sec ol{
-          font-size: 16px;
           margin-left: 30px;
           text-indent: 0em;
         }
@@ -107,6 +106,9 @@
         }
         .table-left td{
           text-align: left;
+        }
+        .table-center td{
+          text-align: center;
         }
         .tr-shading{
           background-color: #C4C4C4;
@@ -259,7 +261,7 @@
               <p>新北市人口密集，每日產生之垃圾量相當驚人，垃圾量在實施隨袋徵收前，每天約有2,500公噸的垃圾產生，為了有效削減垃圾產生量，並參考環境議題中經常使用之使用者付費原則，新北市政府於99年12月1日正式推動新北市垃圾費隨袋徵收政策，根據環保署統計，新北市97年平均每人每日垃圾清運量0.578公斤，全國排名第17；截至100年9月止，平均每人每日垃圾清運量已降為0.329公斤，全國排名第2，僅次於金門縣(0.32公斤)，且優於施行垃圾費隨袋徵收政策已久的臺北市(0.408公斤)。</p>
               <p>
                 <center>
-                  <table class="table-left" style="width: 95%;">
+                  <table class="table-left" style="width: 95%; border: hidden;">
                     <caption>表一、各縣市平均每人每日垃圾清運量(97-100年)</caption>
                     <tr><td><img src="ref2-4.png" style="width: 100%;"></td></tr>
                   </table>
@@ -275,11 +277,19 @@
               <p>空氣品質指標為依據監測資料將當日空氣中臭氧(O3)、細懸浮微粒(PM2.5)、懸浮微粒(PM10)、一氧化碳(CO)、二氧化硫(SO2)及二氧化氮(NO2)濃度等數值，以其對人體健康的影響程度，分別換算出不同污染物之副指標值，再以當日各副指標之最大值為該測站當日之空氣品質指標值(AQI)。依照世界衛生組織（WHO）污染物濃度轉換的規範，在溫度25oC及大氣壓1013百帕時，二氧化硫的濃度1 ppb = 2.62 µg/ m-3。但注意空氣品質指標(AQI) 200以上之指標值，是以二氧化硫(SO2)的24小時所累積的數值計算之，而不是以二氧化硫(SO2)每小時平均值計算之。</p>
               <p>
                 <center>
-                  <table class="table-left" style="width: 95%;">
+                  <table class="table-center" style="width: 95%;">
                     <caption>污染物濃度與污染副指標值對照表</caption>
-                    <tr><td>建置中</td></tr>
+                    <tr><th colspan="8">空氣品質指標(AQI)</th></tr>
+                    <tr><th>AQI指標</th><th>O<font style="vertical-align: sub;">3</font><br/>(ppm)<br/>8小時平均值</th><th>O<font style="vertical-align: sub;">3</font><br/>(ppm)<br/>小時平均值<font style="color: red; vertical-align: super;">(1)</font></th><th>PM<font style="vertical-align: sub;">2.5</font><br/>(μg/m<font style="vertical-align: super;">3</font> )<br/>24小時平均值</th><th>PM<font style="vertical-align: sub;">10</font><br/>(μg/m<font style="vertical-align: super;">3</font> )<br/>24小時平均值</th><th>CO<br/>(ppm)<br/>8小時平均值</th><th>SO<font style="vertical-align: sub;">2</font><br/>(ppb)<br/><font style="text-decoration: underline;">µg/m<font style="vertical-align: super;">-3</font></font><br/>小時平均值</th><th>NO<font style="vertical-align: sub;">2</font><br/>(ppb)<br/>小時平均值</th></tr>
+                    <tr><td style="background: #00ff00;">良好<br/>0～50</td><td>0.000 - 0.054</td><td>-</td><td>0.0 - 15.4</td><td>0 - 54</td><td>0 - 4.4</td><td>0 - 35<br/><font style="text-decoration: underline;">0 - 91.7</font></td><td>0 - 53</td></tr>
+                    <tr><td style="background: #ffff00;">普通<br/>51～100</td><td>0.055 - 0.070</td><td>-</td><td>15.5 - 35.4</td><td>55 - 125</td><td>4.5 - 9.4</td><td>36 - 75<br/><font style="text-decoration: underline;">94.3 - 196.5</font></td><td>54 - 100</td></tr>
+                    <tr><td style="background: #ff7e00;">對敏感族群不良<br/>101～150</td><td>0.071 - 0.085</td><td>0.125 - 0.164</td><td>35.5 - 54.4</td><td>126 - 254</td><td>9.5 - 12.4</td><td>76 - 185<br/><font style="text-decoration: underline;">199.1 - 484.7</font></td><td>101 - 360</td></tr>
+                    <tr><td style="background: #ff0000;">對所有族群不良<br/>151～200</td><td>0.086 - 0.105</td><td>0.165 - 0.204</td><td>54.5 - 150.4</td><td>255 - 354</td><td>12.5 - 15.4</td><td>186 - 304<font style="color: red; vertical-align: super;">(3)</font><br/><font style="text-decoration: underline;">487.3 - 796.5</font></td><td>361 - 649</td></tr>
+                    <tr><td style="background: #800080; color: #ffffff;">非常不良<br/>201～300</td><td>0.106 - 0.200</td><td>0.205 - 0.404</td><td>150.5 - 250.4</td><td>355 - 424</td><td>15.5 - 30.4</td><td>305 - 604<font style="color: red; vertical-align: super;">(3)</font><br/><font style="text-decoration: underline;">799.1 - 1582.5</font></td><td>650 - 1249</td></tr>
+                    <tr><td style="background: #7e0023; color: #ffffff;">有害<br/>301～400</td><td><font style="color: red; vertical-align: super;">(2)</font></td><td>0.405 - 0.504</td><td>250.5 - 350.4</td><td>425 - 504</td><td>30.5 - 40.4</td><td>605 - 804<font style="color: red; vertical-align: super;">(3)</font><br/><font style="text-decoration: underline;">1585.1 - 2106.5</font></td><td>1250 - 1649</td></tr>
+                    <tr><td style="background: #7e0023; color: #ffffff;">有害<br/>401～500</td><td><font style="color: red; vertical-align: super;">(2)</font></td><td>0.505 - 0.604</td><td>350.5 - 500.4</td><td>505 - 604</td><td>40.5 - 50.4</td><td>805 - 1004<font style="color: red; vertical-align: super;">(3)</font><br/><font style="text-decoration: underline;">2109.1 - 2630.5</font></td><td>1650 - 2049</td></tr>
                     <tr>
-                      <td style="border-left: hidden; border-right: hidden; border-bottom:hidden; padding-right: 50px;">
+                      <td colspan="8" style="border-left: hidden; border-right: hidden; border-bottom:hidden; padding-right: 50px;">
                         <ol>
                           <li>一般以臭氧(O3)8小時值計算各地區之空氣品質指標(AQI)。但部分地區以臭氧(O3)小時值計算空氣品質指標(AQI)是更具有預警性，在此情況下，臭氧(O3)8小時與臭氧(O3)1小時之空氣品質指標(AQI)則皆計算之，取兩者之最大值作為空氣品質指標(AQI)。</li>
                           <li>空氣品質指標(AQI)301以上之指標值，是以臭氧(O3)小時值計算之，不以臭氧(O3)8小時值計算之。</li>
@@ -292,9 +302,13 @@
               </p>
               <p>
                 <center>
-                  <table class="table-left" style="width: 95%;">
+                  <table class="table-center" style="width: 95%;">
                     <caption>空氣品質指標(AQI)與健康影響</caption>
-                    <tr><td>建置中</td></tr>
+                    <tr><th style="width: 15%;">空氣品質指標(AQI)</th><th>0～50</th><th>51～100</th><th>101～150</th><th>151～200</th><th>201～300</th><th>301～500</th></tr>
+                    <tr><td rowspan="2">對健康影響與活動建議</td><td>良好</td><td>普通</td><td>對敏感族群不良</td><td>對所有族群不良</td><td>非常不良</td><td>有害</td></tr>
+                    <tr><td>Good</td><td>Moderate</td><td>Unhealthy for Sensitive Groups</td><td>Unhealthy</td><td>Very Unhealthy</td><td>Hazardous</td></tr>
+                    <tr><td>狀態色塊</td><td style="background: #00ff00;">綠</td><td style="background: #ffff00;">黃</td><td style="background: #ff7e00;">橘</td><td style="background: #ff0000;">紅</td><td style="background: #800080; color: #ffffff;">紫</td><td style="background: #7e0023; color: #ffffff;">褐紅</td></tr>
+                    <tr><td>人體健康影響</td><td>空氣品質為良好，污染程度低或無污染。</td><td>空氣品質普通；但對非常少數之極敏感族群產生輕微影響。</td><td>空氣污染物可能會對敏感族群的健康造成影響，但是對一般大眾的影響不明顯。</td><td>對所有人的健康開始產生影響，對於敏感族群可能產生較嚴重的健康影響。</td><td>健康警報：所有人都可能產生較嚴重的健康影響。</td><td>健康威脅達到緊急，所有人都可能受到影響。</td></tr>
                   </table>
                 </center>
               </p>
@@ -332,7 +346,6 @@
               <span class="arrow"></span><span class="arrow"></span>
               <span class="ref-title">參考文章2-9：興建基隆天外天焚化廠的民意調查</span>
               <p></p>
-              <p>(建置中)基隆市google map截圖</p>
               <p>針對基隆天外天焚化廠興建的民意調查，得到以下的結果：
                 <ol>
                   <li>信義區之受訪民眾有65%贊成實施本計畫，7%持反對意見。</li>
@@ -344,6 +357,14 @@
                 </ol>
               </p>
               <p>這些結果除了顯示出一般民眾對於垃圾焚化廠的興建與恐懼之外，也對焚化廠興建後的補償措施指出了方向。</p>
+              <p>
+                <center>
+                  <table class="table-left" style="width: 95%; border:hidden;">
+                    <caption>基隆市信義區天外天焚化廠所在位置地圖</caption>
+                    <tr><td><img src="ref2-9.png" style="width: 100%;"></td></tr>
+                  </table>
+                </center>
+              </p>
             </section>
 
           <section id="step2-7" class="step-sec"><span class="step-title">步驟2.7</span></section>
@@ -354,9 +375,25 @@
               <p>許多焚化廠在未來五年內也會相繼面臨除役與延役與否的問題。目前全國24座焚化廠15年以上的有15座，20年以上的有5座，設備不時就需要歲修。這些焚化廠要消化該縣市垃圾已負擔沉重，實在無力再消化其他縣市垃圾，加上從107年至110年將有14座須輪流停爐1年，全國焚化廠可以處理的垃圾量更少。</p>
               <p>
                 <center>
-                  <table class="table-left" style="width: 95%;">
+                  <table class="table-center" style="width: 70%;">
                     <caption>焚化廠建造年分、完工啟用年分表</caption>
-                    <tr><td>建置中</td></tr>
+                    <tr><td>名稱</td><td>建造年分</td><td>完工啟用年分</td></tr>
+                    <tr><td>台北市內湖垃圾焚化廠</td><td>1987年</td><td>1991年</td></tr>
+                    <tr><td>台北市木柵垃圾焚化廠</td><td>1989年</td><td>1994年</td></tr>
+                    <tr><td>台北市北投垃圾焚化廠</td><td>1990年</td><td>1999年</td></tr>
+                    <tr><td>新北市新店垃圾焚化廠</td><td>1991年</td><td>1994年</td></tr>
+                    <tr><td>新北市樹林垃圾焚化廠</td><td>1992年</td><td>1995年</td></tr>
+                    <tr><td>台中市南屯垃圾焚化廠</td><td>1992年</td><td>1995年</td></tr>
+                    <tr><td>台南市城西垃圾焚化廠</td><td>1993年</td><td>1999年</td></tr>
+                    <tr><td>嘉義市東區垃圾焚化廠</td><td>1994年</td><td>1998年</td></tr>
+                    <tr><td>高雄市中區垃圾焚化廠</td><td>1995年</td><td>1999年</td></tr>
+                    <tr><td>新竹市垃圾焚化廠</td><td>1995年</td><td>2000年</td></tr>
+                    <tr><td>新北市八里垃圾焚化廠</td><td>1997年</td><td>2001年</td></tr>
+                    <tr><td>高雄市岡山垃圾焚化廠</td><td>1998年</td><td>2001年</td></tr>
+                    <tr><td>桃園市中壢垃圾焚化廠</td><td>1999年</td><td>2001年</td></tr>
+                    <tr><td>基隆市天外天垃圾焚化廠</td><td>2001年</td><td>2005年</td></tr>
+                    <tr><td>宜蘭縣利澤垃圾焚化廠</td><td>2002年</td><td>2005年</td></tr>
+                    <tr><td>台南市永康垃圾焚化廠</td><td>2003年</td><td>2007年</td></tr>
                   </table>
                 </center>
               </p>
@@ -388,16 +425,30 @@
               <p></p>
               <p>
                 <center>
-                  <table class="table-left" style="width: 95%;">
+                  <table class="table-center" style="width: 70%;">
                     <caption>焚化廠的焚化爐個數</caption>
-                    <tr><td>建置中</td></tr>
+                    <tr><td>名稱</td><td>處理能力<br/>總量 (單爐處理能力*焚化爐個數)</td></tr>
+                    <tr><td>台北市內湖垃圾焚化廠</td><td>900噸/天(300*3)</td></tr>
+                    <tr><td>台北市木柵垃圾焚化廠</td><td>1500噸/天(375*4)</td></tr>
+                    <tr><td>台北市北投垃圾焚化廠</td><td>1800噸/天(450*4)</td></tr>
+                    <tr><td>新北市新店垃圾焚化廠</td><td>900噸/天(450*2)</td></tr>
+                    <tr><td>新北市樹林垃圾焚化廠</td><td>1350噸/天(450*3)</td></tr>
+                    <tr><td>台中市南屯垃圾焚化廠</td><td>900噸/天(300*3)</td></tr>
+                    <tr><td>台南市城西垃圾焚化廠</td><td>900噸/天(450*2)</td></tr>
+                    <tr><td>嘉義市東區垃圾焚化廠</td><td>300噸/天(150*2)</td></tr>
+                    <tr><td>高雄市中區垃圾焚化廠</td><td>900噸/天(300*3)</td></tr>
+                    <tr><td>新竹市垃圾焚化廠</td><td>900噸/天(450*2)</td></tr>
+                    <tr><td>新北市八里垃圾焚化廠</td><td>1350噸/天(450*3)</td></tr>
+                    <tr><td>高雄市岡山垃圾焚化廠</td><td>1350噸/天(450*3)</td></tr>
+                    <tr><td>桃園市中壢垃圾焚化廠</td><td>1350噸/天(675*2)</td></tr>
+                    <tr><td>基隆天外天垃圾焚化廠</td><td>600噸/天(300*2)</td></tr>
+                    <tr><td>宜蘭縣利澤垃圾焚化廠</td><td>600噸/天(300*2)</td></tr>
+                    <tr><td>苗栗縣竹南垃圾焚化廠</td><td>500噸/天(250*2)</td></tr>
+                    <tr><td>台南市永康垃圾焚化廠</td><td>900噸/天(450*2)</td></tr>
                   </table>
                 </center>
               </p>
             </section>
-
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-
         </div><!--END 參考文章-->
 
         <!--右側導覽列 nav affix-->
